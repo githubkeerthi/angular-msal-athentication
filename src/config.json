@@ -1,0 +1,10 @@
+{
+    "clientID": "9849d1c9-8838-4d0d-94f1-ca3e3713faa8",
+    "authority": "https://login.microsoftonline.com/xxxx",
+    "redirectUri": "http://localhost:4200/",
+    "cacheLocation": "localStorage",
+    "protectedResourceMap": [
+        ["xxxxxx", ["xxxxxx/.default"]]
+    ], 
+    "extraQueryParameters": "xxxxx"
+}
