@@ -1,16 +1,9 @@
-import { NgModule, APP_INITIALIZER, InjectionToken } from '@angular/core';
-import {
-    MsalInterceptor,
-    MsalModule,
-    MsalService,
-    MsalGuardConfiguration,
-    MsalInterceptorConfiguration,
-    MSAL_INSTANCE,
-    MSAL_GUARD_CONFIG,
-    MSAL_INTERCEPTOR_CONFIG
-} from '@azure/msal-angular';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { Configuration, InteractionType, IPublicClientApplication, LogLevel, PublicClientApplication } from '@azure/msal-browser';
+import { APP_INITIALIZER, InjectionToken, NgModule } from '@angular/core';
+import {
+  MsalGuardConfiguration, MsalInterceptor, MsalInterceptorConfiguration, MsalModule, MSAL_GUARD_CONFIG, MSAL_INSTANCE, MSAL_INTERCEPTOR_CONFIG
+} from '@azure/msal-angular';
+import { InteractionType, IPublicClientApplication, LogLevel, PublicClientApplication } from '@azure/msal-browser';
 import { ConfigService } from './config.service';
 
 const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1; // Remove this line to use Angular Universal
